@@ -50,7 +50,24 @@ public class Student {
                             System.out.println(st.collname);
                         }
                         break;
+                    case 3:
+                        System.out.println("Enter student admission number");
+                        String admno = input.next();
+                        for (Students std : studarr){
+                            if(admno.equals( std.addno)){
+                                System.out.println("Details of student with "+admno);
+                                System.out.println(std.name);
+                                System.out.println(std.rollno);
+                                System.out.println(std.addno);
+                                System.out.println(std.collname);
+                                break;
+                            }
+                            else {
+                                System.out.println("Student not found");
+                            }
 
+                        }
+                        break;
                     case 5:
                         System.exit(0);
 

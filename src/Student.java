@@ -68,6 +68,16 @@ public class Student {
 
                         }
                         break;
+                    case 4:
+                        System.out.println("Enter admission number");
+                        String adno = input.next();
+                        for(Students std : studarr) {
+                            if (std.addno.equals(adno)) {
+                                studarr.remove(std);
+
+                            }
+                        }
+                    break;
                     case 5:
                         System.exit(0);
 

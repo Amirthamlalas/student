@@ -27,6 +27,28 @@ public class Student {
 
                 switch(n) {
 
+                    case 1:
+                        System.out.println("Enter the name of student");
+                        String sname = input.next();
+                        System.out.println("Enter the roll no");
+                        int roll = input.nextInt();
+                        System.out.println("Enter the admission number");
+                        String adm = input.next();
+                        System.out.println("Enter college name");
+                        String cname = input.next();
+
+                        Students s = new Students(sname,roll,adm,cname);
+                        studarr.add(s);
+                    break;
+
+                    case 5:
+                        System.exit(0);
+
+                    default:
+                        System.out.println("invalid input");
+
+
+
                 }
 
 

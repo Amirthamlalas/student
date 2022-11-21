@@ -41,6 +41,16 @@ public class Student {
                         studarr.add(s);
                     break;
 
+                    case 2:
+                        System.out.println("Student details :");
+                        for(Students st :studarr){
+                            System.out.println(st.name);
+                            System.out.println(st.rollno);
+                            System.out.println(st.addno);
+                            System.out.println(st.collname);
+                        }
+                        break;
+
                     case 5:
                         System.exit(0);
 

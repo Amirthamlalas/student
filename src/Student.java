@@ -74,7 +74,7 @@ public class Student {
                         for(Students std : studarr) {
                             if (std.addno.equals(adno)) {
                                 studarr.remove(std);
-
+                                break;
                             }
                         }
                     break;
